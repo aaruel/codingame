@@ -35,7 +35,7 @@ int main()
     cerr << nbFloors << endl;
     // game loop
     while (1) {
-        fuckyou:
+        f:
         int cloneFloor; // floor of the leading clone
         int clonePos; // position of the leading clone on its floor
         string direction; // direction of the leading clone: LEFT or RIGHT
@@ -47,7 +47,7 @@ int main()
             } else {
                 cout << "WAIT" << endl;
             }
-            goto fuckyou;
+            goto f;
         }
         if(nbFloors > 1){
         for(int i = 0; i < nbFloors; i++){
